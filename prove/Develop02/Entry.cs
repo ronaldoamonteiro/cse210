@@ -12,4 +12,10 @@ public class Entry
         Prompt = prompt;
         Text = text;
     }
+    public override string ToString()
+    {
+        return $"Date: {Date} - Prompt: {Prompt}: \n{Text}\n";
+    }
+
+
 }

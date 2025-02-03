@@ -2,11 +2,11 @@ public class PromptManager{
 //umma lista
     List<string> prompt = new List<string>
     {
-        "Who was the most interesting person I interacted with today?",
-        "What was the best part of my day?",
-        "How did I see the hand of the Lord in my life today?",
-        "What was the strongest emotion I felt today?",
-        "If I had one thing I could do over today, what would it be?"
+        "What is one thing I learned today that I want to remember?",
+        "How did I show kindness or serve someone today?",
+        "What moment today made me feel the most grateful?",
+        "What challenge did I face today, and how did I handle it?",
+        "If I could give my past self one piece of advice for today, what would it be?"
     };
     Random random = new Random();
     public string GetRandomPrompt(){

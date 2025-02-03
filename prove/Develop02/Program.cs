@@ -21,16 +21,16 @@ class Program
                 jornal.AddEntry("28-Jan-2025", randomPrompt, response);
             }
             else if (option == 2){ //Display Option
-                Console.WriteLine("Display option");
+                jornal.DisplayEntries();
             }
             else if (option == 3){ //Load option
-                Console.WriteLine("Load option");
+                jornal.Load();
             }
             else if (option == 4){ //Save option
-                Console.WriteLine("Save option");
+                jornal.Save();
             }
             else{ //Quite option
-                Console.WriteLine("Quite option");
+                Console.WriteLine("See you later!");
             }
         }while(option != 5);
     }
