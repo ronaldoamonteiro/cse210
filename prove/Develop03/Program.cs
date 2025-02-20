@@ -4,11 +4,11 @@ class Program
 {
     static void Main()
     {
-        // Criando a referência e a escritura
+        // Creating the reference and the scripture
         Reference reference = new Reference("Proverbs", 3, 5, 6);
         Scripture scripture = new Scripture(reference, "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknowledge him, and he shall direct thy paths.");
 
-        // Loop principal do programa
+        // Main loop of the program
         while (!scripture.IsCompletelyHidden())
         {
             Console.Clear();
@@ -19,7 +19,7 @@ class Program
             if (input == "quit")
                 break;
 
-            scripture.HideWords(); // Esconde palavras progressivamente
+            scripture.HideWords(); // Hides words progressively
         }
 
         Console.Clear();

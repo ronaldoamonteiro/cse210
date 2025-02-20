@@ -16,18 +16,18 @@ class Scripture
 
     public void HideWords()
     {
-        // Oculta um número pequeno de palavras aleatórias
-        int wordsToHide = 3; // Número gradual de palavras ocultadas por rodada
+        // Hides a small number of random words
+        int wordsToHide = 3; // Gradual number of words hidden per round
         int hiddenCount = 0;
 
-        // Apenas esconde palavras que ainda estão visíveis
+        // Only hides words that are still visible
         List<Word> visibleWords = words.Where(w => !w.IsHidden()).ToList();
 
         while (hiddenCount < wordsToHide && visibleWords.Count > 0)
         {
             int index = random.Next(visibleWords.Count);
             visibleWords[index].Hide();
-            visibleWords.RemoveAt(index); // Remove da lista de visíveis para evitar duplicações
+            visibleWords.RemoveAt(index); // Removes from the list of visible words to avoid duplicates
             hiddenCount++;
         }
     }

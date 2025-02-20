@@ -3,7 +3,7 @@ class Reference
     private string book;
     private int chapter;
     private int verseStart;
-    private int? verseEnd; // Nullable para aceitar um único versículo ou um intervalo
+    private int? verseEnd; // Nullable to accept a single verse or a range
 
     public Reference(string book, int chapter, int verseStart, int? verseEnd = null)
     {
